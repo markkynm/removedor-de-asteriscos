@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removedor de Asteriscos</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.png');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #1a4b8c;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+        }
+        
+        .subtitle {
+            color: #2c5aa0;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Áreas de entrada e saída */
+        .content-area {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(26, 75, 140, 0.3);
+            margin-bottom: 20px;
+            border: 1px solid #b3cdf5;
+        }
+        
+        .input-section, .output-section {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a4b8c;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #b3cdf5;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: vertical;
+            min-height: 120px;
+            box-sizing: border-box;
+            background-color: #f8fbff;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #3367D6;
+            box-shadow: 0 0 0 2px rgba(51, 103, 214, 0.2);
+        }
+        
+        /* Botões */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .primary-button {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        
+        .primary-button:hover:not(:disabled) {
+            background-color: #0f3b76;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .secondary-button {
+            background-color: #e1ecf9;
+            color: #1a4b8c;
+            border: 1px solid #b3cdf5;
+        }
+        
+        .secondary-button:hover:not(:disabled) {
+            background-color: #d0e3f7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .copy-button {
+            background-color: #2c5aa0;
+            color: white;
+            align-self: flex-end;
+        }
+        
+        .copy-button:hover {
+            background-color: #1a4b8c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Espaços para anúncios */
+        .ad-container {
+            width: 100%;
+            min-height: 90px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px 0;
+            box-shadow: 0 2px 8px rgba(26, 75, 140, 0.2);
+            overflow: hidden;
+        }
+        
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #1a4b8c;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .content-area {
+                padding: 20px;
+            }
+            
+            .ad-container {
+                overflow-x: auto;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content-area {
+                padding: 15px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            button {
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- Código do Popunder -->
+    <script type='text/javascript' src='//pl26832877.profitableratecpm.com/75/54/64/7554643cb90660c109b76a6c72498bee.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Removedor de Asteriscos</h1>
+        <p class="subtitle">Remova facilmente todos os asteriscos do seu texto</p>
+        
+        <div class="ad-container">
+            <!-- Código do Banner -->
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '3ecefdbe4697a3059b7e5bc4c06c4b6c',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/3ecefdbe4697a3059b7e5bc4c06c4b6c/invoke.js"></script>
+        </div>
+        
+        <div class="content-area">
+            <div class="input-section">
+                <label for="input-text">Cole seu texto com asteriscos:</label>
+                <textarea id="input-text" placeholder="Cole aqui o texto com asteriscos (*) para remover..."></textarea>
+            </div>
+            
+            <div class="button-group">
+                <button id="remove-button" class="primary-button" disabled>Remover Asteriscos</button>
+                <button id="clear-button" class="secondary-button" disabled>Limpar</button>
+            </div>
+            
+            <div class="output-section">
+                <label for="output-text">Texto sem asteriscos:</label>
+                <textarea id="output-text" placeholder="O texto sem asteriscos aparecerá aqui..." readonly></textarea>
+                <div id="copy-button-container" style="display: none; text-align: right; margin-top: 10px;">
+                    <button id="copy-button" class="copy-button">Copiar Texto</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ad-container">
+            <!-- Espaço para segundo banner (opcional) -->
+        </div>
+        
+        <footer>
+            <p>Ferramenta simples para remover asteriscos de textos copiados de IAs</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Elementos do DOM
+        const inputText = document.getElementById('input-text');
+        const outputText = document.getElementById('output-text');
+        const removeButton = document.getElementById('remove-button');
+        const clearButton = document.getElementById('clear-button');
+        const copyButton = document.getElementById('copy-button');
+        const copyButtonContainer = document.getElementById('copy-button-container');
+        
+        // Função para remover asteriscos
+        function removeAsterisks() {
+            const text = inputText.value;
+            const cleanText = text.replace(/\*/g, '');
+            outputText.value = cleanText;
+            
+            // Mostrar botão de copiar se houver texto de saída
+            if (cleanText.trim() !== '') {
+                copyButtonContainer.style.display = 'block';
+            } else {
+                copyButtonContainer.style.display = 'none';
+            }
+        }
+        
+        // Função para limpar os campos
+        function clearFields() {
+            inputText.value = '';
+            outputText.value = '';
+            copyButtonContainer.style.display = 'none';
+            updateButtonStates();
+        }
+        
+        // Função para copiar texto
+        function copyText() {
+            outputText.select();
+            document.execCommand('copy');
+            
+            // Feedback visual temporário
+            const originalText = copyButton.textContent;
+            copyButton.textContent = 'Copiado!';
+            setTimeout(() => {
+                copyButton.textContent = originalText;
+            }, 2000);
+        }
+        
+        // Função para atualizar estados dos botões
+        function updateButtonStates() {
+            const hasInputText = inputText.value.trim() !== '';
+            const hasOutputText = outputText.value.trim() !== '';
+            
+            removeButton.disabled = !hasInputText;
+            clearButton.disabled = !hasInputText && !hasOutputText;
+            
+            if (hasOutputText) {
+                copyButtonContainer.style.display = 'block';
+            } else {
+                copyButtonContainer.style.display = 'none';
+            }
+        }
+        
+        // Event listeners
+        inputText.addEventListener('input', updateButtonStates);
+        removeButton.addEventListener('click', removeAsterisks);
+        clearButton.addEventListener('click', clearFields);
+        copyButton.addEventListener('click', copyText);
+        
+        // Inicializar estados dos botões
+        updateButtonStates();
+    </script>
+</body>
+</html>
